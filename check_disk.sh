@@ -1,6 +1,6 @@
 #!/bin/bash 
  
-set_max=4
+set_max=80
 work_dir="/var/log"
 
 used_space=`df -H $work_dir  | grep % | awk {'print $5'} | sed '1d;s/[^0-9]//g'`
